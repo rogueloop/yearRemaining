@@ -1,83 +1,77 @@
-/* 
 body {
-    background-color: #ebebeb;
-    max-width: 900px;
-    margin: 3rem auto;
-    text-align: center;
-  }
-  #countdown {
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: #fff;
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  }
-  #countdown div {
-    display: inline-block;
-    margin: 0 0.5rem;
-  }
-  #countdown div span {
-    color: purple;
-  }
-   */
+  font-family: Arial, sans-serif;
+  background-color: #0e1538;
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+}
 
-   body {
-    font-family: Arial, sans-serif;
-    background-color: #ebebeb;
-    max-width: 900px;
-    margin: 3rem auto;
-    text-align: center;
-  }
-  
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f9f9f9;
+  margin-bottom: 2rem;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+#countdown div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#countdown span {
+  font-size: 1.2rem;
+  color: #888888;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
   h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 2rem;
-  }
-  
-  #countdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: #fff;
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  }
-  
-  #countdown div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem;
     font-size: 2rem;
-    font-weight: bold;
-    color: #333333;
+  }
 
-  }
-  
   #countdown span {
-    font-size: 1.2rem;
-    color: #888888;
-    text-transform: uppercase;
-    margin-top: 0.5rem;
+    font-size: 1.5rem;
   }
-  
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 2rem;
-    }
-  
-    #countdown  span {
-      font-size: 1.5rem;
-    }
-  
-    #countdown-label {
-      font-size: 1rem;
-    }
+
+  #countdown-label {
+    font-size: 1rem;
   }
-  
+}
+
+.box {
+  position: relative;
+  background: #000;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  background: linear-gradient(45deg, #ffeb3b, #0e1538, #0e1538, #00ff0a);
+  box-shadow: 0 0 0 20px #070c23;
+  z-index: -1;
+}
+
+.box::after {
+  position: absolute;
+  inset: -3px;
+  background: linear-gradient(45deg, #ffeb3b, #0e1538, #0e1538, #00ff0a);
+  filter: blur(20px
+  );
+}
+
