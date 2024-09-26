@@ -4,7 +4,7 @@ let minutesContainer = document.getElementById("minutes");
 let secondsContainer = document.getElementById("seconds");
 
 function updateCount() {
-  let newYear = new Date("January 1, 2024 00:00:00");
+  let newYear = new Date("January 1, 2025 00:00:00");
   let currentTime = new Date();
 
   let difference = newYear - currentTime;
