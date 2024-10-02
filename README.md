@@ -1,5 +1,7 @@
 # yearRemaining
-A site where you can see a count down on year remaining time .
+Stay updated with our countdown timer showing the exact time remaining until the New Year. Track the days, hours, minutes, and seconds!
+
+
 https://rogueloop.github.io/yearRemaining/
 
 <p align="center"> 
